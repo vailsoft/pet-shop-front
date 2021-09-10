@@ -1,3 +1,4 @@
+/* TIPOGRAFIA*/
 @font-face {
     font-family: "Nunito Regular";
     src: url(../fonts/Nunito-Regular.ttf);
@@ -8,6 +9,7 @@
     font-family: "Nunito Bold";
     src: url(../fonts/Nunito-Bold.ttf);
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -19,17 +21,18 @@ body{
     display: flex;
     flex-direction: column;
 }
-div.container{
-    justify-content: stretch;
+
+.container{
+    display: flex;
+    flex-direction: column;
 }
-
-
 header{
     max-width: 100%;
     width: 100vw;
     background-color: #FFBE51;
     display: flex;
     justify-content: space-between;
+    box-shadow: 1px 1px 5px gray;
 }
 
 img.logo{
@@ -74,98 +77,34 @@ nav#menu ul li a{
     border: none;
 }
 
-.sect_1{
-    display: flex;
-    justify-content: space-around;
-    margin: 93px 0;
-}
-.sect_1 h1{
-    align-self: center;
-}
 
-.tit_inicio{
-    max-width: 100%;
-    width: 560px;
-    color: #757575;
+
+
+h1.tit_servicos{
+    width: 200px;
+    height: 55px;
+    font-family: "Nunito Regular", sans-serif;
     font-size: 40px;
+    color: #ffbe51;
+    align-self: center;
+    margin-top: 111px;
+    margin-bottom: 124px;
 }
 
-img.homem_cao{
-    max-width: 100%;
-    width: 499px;
-}
-
-
-
-.sect_2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #e5e5e5;
-
-}
-
-h2.tit_2{
-    text-align: center;
-    margin-bottom: 93px;
-    margin-top: 93px;
-    font-weight: 400;
-    font-family: "Nunito Regular", sans-serif;
-}
-
-div.articles{
-    max-width: 100%;
+.servicos_sect{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 117px;
-}
-
-div.articles img{
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    /* margin-bottom: 117px; */
-}
-
-span.desc_serv{
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 147px;
-}
-
-.sect_3{
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin: 93px 20px;
+    border: solid 1px black;
+    width: 1144px;
+    margin: 0 auto;
 }
 
 
-article.art_sect_3{
-    max-width: 100%;
-    width: 561px;
-}
 
-article.art_sect_3 h2{
-    max-width: 100%;
-    font-family: "Nunito Bold", sans-serif;
-    font-weight: 700;
-    max-width: 100%;
-    font-size: 27px;
-    margin-bottom: 29px;
-    color: #757575;
-}
-article.art_sect_3 p{
-    max-width: 100%;
-    font-family: "Nunito Regular", sans-serif;
-    font-weight: 400;
-    color:#757575;
-    font-size: 18px;
-}
+
 
 footer{
     max-width: 100%;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: #FFBE51;
@@ -225,24 +164,29 @@ div.footer_cinza p{
     color: white;
 }
 
-
 @media screen and (max-width: 466px) {
     img.logo {
         padding-left: 1em;
     }
   }
 
+
+   /* Ajustes para Mobile*/
 @media screen and (max-width: 780px) {
     body{
         text-align: center;
         margin: 0px auto;
     }
+
+    /* Menu */ 
     nav#menu ul{
         display: none;
     }
     .burger-menu{
         display: inherit;
     }
+
+
     .img_center, iframe{
         margin: 0 auto;
         width: 90%;
@@ -260,17 +204,10 @@ div.footer_cinza p{
     figure.s2,
     figure.s3,
     figure.mulher_cachorro{
-        max-width: 100%;
         display: flex;
         flex-direction: column;
 
     }
-
-    div.articles img{
-        width: 70%;
-
-    }
-
     .sect_1{
         display: flex;
         flex-direction: column;
@@ -319,7 +256,13 @@ div.footer_cinza p{
         margin: 0px;
     }
 
-
+    iframe.mapa{
+        max-width: 100%;
+        width: 300px;
+        height: 200px;
+        margin: 50px 20px;
+        border-radius: 10px;
+    }
 
     article.contact{
         height: 140px;
@@ -328,8 +271,9 @@ div.footer_cinza p{
         
     }
 
-    footer{
-        max-width: 100%;
+    .servicos_sect{
+        display: flex;
+        flex-direction: column;
     }
 
     
