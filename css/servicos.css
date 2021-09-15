@@ -77,6 +77,43 @@ nav#menu ul li a{
     border: none;
 }
 
+.container .menu-slide{
+    border: solid 1px black;
+    width: 230px;
+    justify-content: flex-end;
+    position: absolute;
+    align-self: flex-end;
+    display: none;
+}
+
+
+.container .menu-slide ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .menu-slide ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #FFBE51;
+    width: 230px;
+    height: 50px;
+    border: solid 1px white;
+    color: white;
+
+}
+.container .menu-slide ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.container .menu-slide.mostrar{
+    display: inherit;
+}
+
 
 
 
@@ -185,8 +222,7 @@ div.footer_cinza p{
     .burger-menu{
         display: inherit;
     }
-
-
+    
     .img_center, iframe{
         margin: 0 auto;
         width: 90%;

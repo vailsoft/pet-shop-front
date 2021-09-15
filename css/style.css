@@ -20,6 +20,8 @@ body{
     flex-direction: column;
 }
 div.container{
+    display: flex;
+    flex-direction: column;
     justify-content: stretch;
 }
 
@@ -42,12 +44,11 @@ nav#menu{
     width: 500px;
 }
 
- ul{
+ul{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-
 }
 nav#menu ul li{
     justify-content: space-around;
@@ -59,6 +60,7 @@ nav#menu ul li a{
     text-decoration: none;
 }
 
+/* Menu que aparece nos smartphones*/
 .burger-menu{
     background-color: #FFBE51;
     border: none;
@@ -68,10 +70,46 @@ nav#menu ul li a{
     flex-direction: row-reverse;
     margin-left: auto;margin-right: 2rem;
     display: none;
-
 }
 .burger-menu a:hover{
     border: none;
+}
+
+.container .menu-slide{
+    border: solid 1px black;
+    width: 230px;
+    justify-content: flex-end;
+    position: absolute;
+    align-self: flex-end;
+    display: none;
+}
+
+
+.container .menu-slide ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .menu-slide ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #FFBE51;
+    width: 230px;
+    height: 50px;
+    border: solid 1px white;
+    color: white;
+
+}
+.container .menu-slide ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.container .menu-slide.mostrar{
+    display: inherit;
 }
 
 .sect_1{
@@ -347,3 +385,4 @@ div.footer_cinza p{
     
 
 }
+
